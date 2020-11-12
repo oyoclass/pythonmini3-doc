@@ -120,11 +120,11 @@ A URL string which is being listened on and a data dictionary.
 
 def printAddedUser(url, data):
     # URL path being listened on
-    print url
+    print(url)
     # relative location of the data from the passed URL path
-    print data['key']
+    print(data['key'])
     # data located at the URL path and key
-    print data['value']
+    print(data['value'])
 
 ```
 
@@ -168,7 +168,7 @@ def printAddedUser(url, data):
     # This key will be used to update the data at that URL path and key.
     # This change will emit a child_updated event see Child Updated.
     updateUser(key)
-    print data['value']['username'], " has joined."
+    print(data['value']['username'], " has joined.")
 
 # the child_added method will retrieve every child at the URL path 'users/'
 db.child_added('users/', printAddedUser)
@@ -208,7 +208,7 @@ db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
 
 # This callback function will print the username from the return data dictionary.
 def printRemovedUser(url, data):
-    print data['value']['username'], " has left."
+    print(data['value']['username'], " has left.")
 
 # The child_removed method will fire when a child at the URL path 'users/'
 # is removed.
@@ -236,7 +236,7 @@ db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
 
 # This callback function will print the username from the return data dictionary.
 def printUpdatedUser(url, data):
-    print data['value']['username'], " has updated."
+    print(data['value']['username'], " has updated.")
 
 # The child_updated method will fire when a child at the URL path 'users/'
 # is updated.
@@ -275,7 +275,7 @@ over the returned data["value"].
 def printAllUsers(url, data):
     # entire path's contents are sent
     for user in data["value"]:
-        print data["value"][user]["username"] + " has joined."
+        print(data["value"][user]["username"] + " has joined.")
 
 # The printAllUsers method will fire when any change at the URL path 'users/'
 # is modified(added, removed, updated).
@@ -322,7 +322,7 @@ db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
 
 # This callback function will print the username from the return data dictionary.
 def printAddedUser(url, data):
-    print data['value']['username'], " has joined."
+    print(data['value']['username'], " has joined.")
 
 # The child_added method will retrieve one child at the URL path 'users/'.
 db.child_added('users/', printAddedUser, True)
@@ -356,7 +356,7 @@ db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
 
 # This callback function will print the username from the return data dictionary.
 def printRemovedUser(url, data):
-    print data['value']['username'], " has left."
+    print(data['value']['username'], " has left.")
 
 # The child_removed method will fire when a child at the URL path 'users/'
 # is removed and not fire again.
@@ -386,7 +386,7 @@ db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
 
 # This callback function will print the username from the return data dictionary.
 def printUpdatedUser(url, data):
-    print data['value']['username'], " has updated."
+    print(data['value']['username'], " has updated.")
 
 # The child_updated method will fire when a child at the URL path 'users/'
 # is updated and then will not fire again.
@@ -432,7 +432,7 @@ over the returned data["value"].
 def printAllUsers(url, data):
     # entire path's contents are sent
     for user in data["value"]:
-        print data["value"][user]["username"] + " has joined."
+        print(data["value"][user]["username"] + " has joined.")
 
 # The printAllUsers method will fire only once at the URL path 'users/'.
 db.value('users/', printAllUsers, True)
@@ -538,25 +538,25 @@ db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16l0w',
 def handleAddedUser(url, data):
     user_id = data["key"]
     username = data["value"]["username"]
-    print "child_added callback:"
-    print "key", user_id
-    print "username", username
+    print("child_added callback:")
+    print("key", user_id)
+    print("username", username)
 
 # Prints out the updates object and key on the URL 'users/'.    
 def handleUpdatedUser(url, data):
     user_id = data["key"]
     username = data["value"]["username"]
-    print "child_updated:"
-    print "key", user_id
-    print "username", username
+    print("child_updated:")
+    print("key", user_id)
+    print("username", username)
 
 # Prints out the removed object and key on the URL 'users/'.
 def handleRemovedUser(url, data):
     user_id = data["key"]
     username = data["value"]["username"]
-    print "child_removed:"
-    print "key", user_id
-    print "username", username
+    print("child_removed:")
+    print("key", user_id)
+    print("username", username)
 
 # attach child_added listener on users/ path
 db.child_added('users/', handleAddedUser)
@@ -580,7 +580,7 @@ def draw():
 # JavaScript dialog box will show.
 # Take the key from previous user objects to use update and remove.
 def mouseClicked():
-    cmd = raw_input("Enter Command([a]dd, [r]emove, [u]pdate):")
+    cmd = input("Enter Command([a]dd, [r]emove, [u]pdate):")
     if cmd is "a":
         addUser()
     elif cmd is "r":
@@ -592,7 +592,7 @@ def mouseClicked():
 # Pushes new object to 'users/' URL path and will trigger child_added
 # event.
 def addUser():
-    username = raw_input("New username:")
+    username = input("New username:")
     db.push('users/',
             {
              'username': username
@@ -602,7 +602,7 @@ def addUser():
 # Removed object at 'users/' + key URL path and will trigger
 # child_removed event.
 def removeUser():
-    user_id = raw_input("Enter key for user to delete:")
+    user_id = input("Enter key for user to delete:")
     db.remove('users/' + user_id)
 
 # Prompts for inputing new user's key and username into javascript
@@ -610,8 +610,8 @@ def removeUser():
 # Updates object at 'users/' + key URL path and will trigger
 # child_updated event.
 def updateUser():
-    user_id = raw_input("Enter key for user to update:")
-    username = raw_input("New username:")
+    user_id = input("Enter key for user to update:")
+    username = input("New username:")
     db.update('users/' + user_id,
             {
              'username': username
@@ -644,8 +644,8 @@ def printOnAdd(url, data):
     """
     Callback function that prints the user's name followed by the message.
     """
-    print data["value"]["name"], "says:"
-    print "\t", data["value"]["text"]
+    print(data["value"]["name"], "says:")
+    print("\t", data["value"]["text"])
 
 # attach child_added listener on /messages path
 db.child_added('/messages', printOnAdd)
@@ -664,7 +664,7 @@ def draw():
 # javascript dialog box
 def mouseClicked():
     global name
-    msg = raw_input("Message:")
+    msg = input("Message:")
     db.push('/messages',
             {
              'name': name,
@@ -674,7 +674,7 @@ def mouseClicked():
 # prompts for inputing name into javascript dialog box
 def initializeChat():
     global name
-    name = raw_input("Name:")
+    name = input("Name:")
 
 # call initializeChat method and run processing
 initializeChat()
