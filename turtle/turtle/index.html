@@ -329,7 +329,7 @@
             <div class="section">
               
                 <h2 id="turtle-turtle-graphics">turtle — Turtle graphics</h2>
-<p>Turtle graphic implements a subset functions of the <a href="https://docs.python.org/2/library/turtle.html">Python Turtle Module</a>.</p>
+<p>Turtle graphic implements a subset functions of the <a href="https://docs.python.org/3/library/turtle.html">Python Turtle Module</a>.</p>
 <h3 id="setup">Setup</h3>
 <pre><code class="python">from turtle import Turtle
 
@@ -345,7 +345,7 @@ nick = Turtle()
 <li><code>turtle.right(angle)</code> or <code>turtle.rt(angle)</code> : Turn turtle right by <em>angle</em> units.</li>
 <li><code>turtle.left(angle)</code> or <code>turtle.lt(angle)</code> : Turn turtle left by <em>angle</em> units.</li>
 <li><code>turtle.goto(x, y)</code> : Move turtle to an absolute position. If the pen is down, draw line.</li>
-<li><code>turtle.setposition(x, y)</code> or <code>turtle.setpos(x, y)</code> : Move turtle to an absolute position without drawing the line. (<em>Notice:</em> this one is different with Python's official turtle module documentation, in which <em>setposition</em> is the same as <em>goto</em>).</li>
+<li><code>turtle.setposition(x, y)</code> or <code>turtle.setpos(x, y)</code> : Move turtle to an absolute position. If the pen is down, draw line. If you want to move the turtle to a position without draw the trailing line, make sure call the <code>turtle.penup()</code> function first.</li>
 <li><code>turtle.setworldcoordinates(llx, lly, urx, ury)</code> : Set up user-defined coordinate system and switch to mode “world” if necessary.</li>
 <li><code>turtle.setx(x)</code> : Set the turtle’s first coordinate to x, leave second coordinate unchanged.</li>
 <li><code>turtle.sety(y)</code> : Set the turtle’s second coordinate to y, leave first coordinate unchanged.</li>
@@ -471,7 +471,7 @@ nick.end_fill()
 
 <h3 id="reference">Reference</h3>
 <ul>
-<li><a href="https://docs.python.org/2/library/turtle.html">turtle library - docs.python.org</a></li>
+<li><a href="https://docs.python.org/3/library/turtle.html">turtle library - docs.python.org</a></li>
 </ul>
               
             </div>

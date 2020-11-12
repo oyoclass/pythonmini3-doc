@@ -317,21 +317,21 @@
 <li><code>OrderedDict</code>: dict subclass that remembers the order entries were added</li>
 <li><code>defaultdict</code>: dict subclass that calls a factory function to supply missing values</li>
 </ul>
-<p>For more information and how to use those objects, check <a href="https://docs.python.org/2/library/collections.html">Python Collections Module documentation</a>.</p>
+<p>For more information and how to use those objects, check <a href="https://docs.python.org/3/library/collections.html">Python Collections Module documentation</a>.</p>
 <h3 id="example">Example</h3>
 <pre><code class="python">import collections
 
 c = collections.Counter('gallahad')
-print c[&quot;a&quot;]
+print(c[&quot;a&quot;])
 # 3
-print c.most_common(1)
+print(c.most_common(1))
 # [('a', 3)]
 
 Point = collections.namedtuple('Point', ['x', 'y'])
 p = Point(1,2)
-print p.x
+print(p.x)
 # 1
-print p.y
+print(p.y)
 # 2
 </code></pre>
               

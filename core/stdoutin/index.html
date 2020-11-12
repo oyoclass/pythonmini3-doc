@@ -311,10 +311,10 @@
                 <h2 id="standard-output-and-input">Standard output and input</h2>
 <h3 id="standard-output">Standard output</h3>
 <p>The most common way to output something is using <code>print</code> function:</p>
-<pre><code class="python">print 2 * 3
-print &quot;hello&quot;
+<pre><code class="python">print(2 * 3)
+print(&quot;hello&quot;)
 arr = [1, 2, 3, 4]
-print arr
+print(arr)
 </code></pre>
 
 <p>Output:</p>
@@ -335,30 +335,31 @@ stdout.write(arr)
 </code></pre>
 
 <h3 id="standard-input">Standard input</h3>
-<p>To get user input, you can use <code>raw_input</code> function:</p>
-<pre><code class="python">name = raw_input(&quot;What's your name?&quot;)
-print &quot;hello&quot;, name
+<p>To get user input, you can use <code>input</code> function:</p>
+<pre><code class="python">name = input(&quot;What's your name?&quot;)
+print(&quot;hello&quot;, name)
 </code></pre>
 
-<p>What you get from <code>raw_input</code> will always be string, even it looks like a number, for example:</p>
-<pre><code class="python">num = raw_input(&quot;Give me a number&quot;)
-print num               # 12
-print num * 2           # 1212
+<p>What you get from <code>input</code> will always be string, even it looks like a number, for example:</p>
+<pre><code class="python">num = input(&quot;Give me a number&quot;)
+print(num)              # 12, this is a string
+print(num * 2)          # 1212, this is the string repeated 2 times
 
 # now convert it to number
 num = int(num)
-print num * 2           # 24
+print(num)              # 12, now this is a number
+print(num * 2)          # 24, this is 12 * 2
 </code></pre>
 
 <p>You can also read user's input by using <code>sys.stdin.read</code> or <code>sys.stdin.readline</code>:</p>
 <pre><code class="python">from sys import stdin
 
 name = stdin.readline()
-print name
+print(name)
 
 # Only read 3 characters
 name = stdin.readline(3)
-print name
+print(name)
 </code></pre>
               
             </div>
