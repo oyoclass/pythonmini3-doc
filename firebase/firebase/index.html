@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Firebase - PythonMini Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/doc.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Firebase";
+    var mkdocs_page_input_path = "firebase/firebase.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> PythonMini Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Core</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../core/number/">Number</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/boolean/">Boolean</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/comparison/">Comparison</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/none/">None</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/string/">String</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/function/">Function</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/list/">List & Tuple</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/set/">Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/dictionary/">Dictionary</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/stdoutin/">Standard output & input</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Standard Modules</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../stdmod/collections/">collections</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/json/">json</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/math/">math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/operator/">operator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/random/">random</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/regexp/">re</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/string/">string</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/time/">time</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Turtle Graphic</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../turtle/turtle/">turtle</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Processing Graphic</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../processing/setup/">Setup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/color/">Color</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/shape/">Shape</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/typography/">Typography</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/web/">Web & Link</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/datetime/">Date & Time</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/image/">Image</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/transform/">Transform</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/light-camera/">Light & Camera</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/math/">Math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/constants/">Constants</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Audio</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../webaudio/webaudio/">webaudio</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Gesture</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../gesture/gesture/">gesture</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Impress</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../impress/impress/">impress</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Firebase</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../setup/">Setup</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Firebase</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#firebase">Firebase</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#firebase-functions">Firebase Functions</a></li>
+        
+            <li><a class="toctree-l4" href="#firebase-class">Firebase Class</a></li>
+        
+            <li><a class="toctree-l4" href="#setup">Setup</a></li>
+        
+            <li><a class="toctree-l4" href="#structured-data">Structured Data</a></li>
+        
+            <li><a class="toctree-l4" href="#examples">Examples</a></li>
+        
+            <li><a class="toctree-l4" href="#savingupdatingremoving-data-example">Saving/Updating/Removing Data Example</a></li>
+        
+            <li><a class="toctree-l4" href="#retrieving-data">Retrieving Data</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#retrieving-data-examples">Retrieving Data Examples</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#on-event-callbacks">On Event Callbacks</a></li>
+        
+            <li><a class="toctree-l4" href="#once-event-callbacks">Once Event Callbacks</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#common-use-cases">Common Use Cases</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#set-and-retrieve">Set and Retrieve</a></li>
+        
+            <li><a class="toctree-l4" href="#unique-push-key-child-added-child-updated-child-removed">Unique Push Key Child Added, Child Updated, Child Removed</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#chat-example">Chat Example</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#credits">Credits</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../structured_data/">Structured Data</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">PythonMini Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Firebase &raquo;</li>
+        
+      
+    
+    <li>Firebase</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="firebase">Firebase</h2>
+<p>The firebase library can be used to add real-time database functionality in your Python applications. This library depends on creating a Firebase app at <a href="https://console.firebase.google.com/">Google Firebase</a>. The Firebase database allows you to store, retrieve, and update data.</p>
+<h3 id="firebase-functions">Firebase Functions</h3>
+<ul>
+<li><code>firebase.loadFirebase(api_key, auth_domain, database_url)</code> : Creates a firebase database connection to your existing Firebase app. It returns the <em>Firebase</em> object that you will use for all the database functionality (the class is explained below). Pass the API key and the app name twice as strings. You will continue to use this <code>db</code> object to work with the database.</li>
+</ul>
+<pre><code class="python">db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
+                           'fir-docs-demo', 'fir-docs-demo')
+</code></pre>
+
+<h3 id="firebase-class">Firebase Class</h3>
+<h4 id="save-data">Save Data</h4>
+<ul>
+<li><code>db.set(url, data)</code>: Write or replace data to a URL path, such as <code>users/star_count</code>. For example, <code>db.set('users/star_count', 10)</code>.</li>
+<li><code>db.push(url, data)</code>: Writes data to URL path at a new unique child. For example, <code>db.push('users/', {'username': 'Bob'})</code>.</li>
+<li><code>db.remove(url)</code>: Removes data at the given URL path. For example, <code>db.remove('users/')</code>.</li>
+<li><code>db.update(url, data)</code>: Writes or replaces data to the URL path. For example, <code>db.update('users/star_count', 15)</code>.</li>
+</ul>
+<h4 id="retrieve-data">Retrieve Data</h4>
+<ul>
+<li><code>db.child_added(url, fn, once=False)</code>: Retrieve lists of items and listen for additions to a list of items to be passed to the callback function. By default, child_added continues to listen for new events, but can retrieve once by passing <code>True</code> to the third parameter once.  For example, <code>db.child_added('users/', printUsers, True)</code>.</li>
+<li><code>db.child_removed(url, fn, once=False)</code>: Listen for items being removed from a list to be passed to the callback function. By default, child_removed continues to listen for new events, but can retrieve once by passing <code>True</code> to the third parameter once. For example, <code>db.child_removed('users/', printRemovedUsers, True)</code>.</li>
+<li><code>db.child_updated(url, fn, once=False)</code>: Listen for changes to the items in a list to be passed to the callback function. By default, child_updated continues to listen for new events, but can retrieve once by passing <code>True</code> to the third parameter once. For example, <code>db.child_updated('users/', printUpdatedUsers, True)</code>.</li>
+<li><code>db.value(url, fn, once=False)</code>: Read and listen for changes to the entire contents of a URL path to be passed to the callback function. By default, value continues to listen for new events, but can retrieve once by passing <code>True</code> to the third parameter once. When once is set to <code>True</code> <code>db.value</code> can be used with <code>db.set</code> to set and read data at a URL path. For example, <code>db.value('users/', printValues, True)</code>.</li>
+</ul>
+<h3 id="setup">Setup</h3>
+<p>Head to <a href="../setup/">Firebase setup</a>.</p>
+<h3 id="structured-data">Structured Data</h3>
+<p>Head to <a href="../structured_data/">Structured Data</a>.</p>
+<h3 id="examples">Examples</h3>
+<h3 id="savingupdatingremoving-data-example">Saving/Updating/Removing Data Example</h3>
+<p>Note: This is not a working example until you add your own API key, database URL and authentication URL.
+For help on setup head to <a href="../setup/">Firebase setup</a>.</p>
+<pre><code class="python">&quot;&quot;&quot;
+Firebase import:
+Declare and initialize database variable(db) with the loadFirebase() method.
+
+firebase.loadFirebase(apiKey, auth_domain, database_url)
+@param apiKey: string
+@param auth_domain: string
+@param database_url: string
+&quot;&quot;&quot;
+import firebase
+
+db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
+                           'fir-docs-demo', 'fir-docs-demo')
+
+&quot;&quot;&quot;
+db.set(url, data)
+@param url: String
+@param data: Python data types and data structures
+&quot;&quot;&quot;
+# data can be numbers
+db.set('users/star_count', 10)
+# data can be strings
+db.set('users/to_be_deleted', '10')
+# data can be floats
+db.set('users/pi', 3.15)
+# data can be Python dictionaries
+db.set('users/spaceship', {
+    &quot;userid&quot;: &quot;uid001&quot;,
+    &quot;health&quot;: 95,
+    &quot;damage&quot;: 8,
+    &quot;coordinates&quot;: [25, 99]
+})
+# data can be Python lists
+db.set('users/my_array', [0, 1, 2, 3, 4, 5])
+
+&quot;&quot;&quot;
+db.push(url, data)
+@param url: String
+@param data: Python data types and data structures
+&quot;&quot;&quot;
+# data can be integers/floats/strings
+db.push('math/', 3.14)
+# data can be Python dictionaries
+db.push('users/', {'username': 'Mary'})
+db.push('users/', {'username': 'Joe'})
+db.push('users/', {
+                    'username': 'Bob',
+                    'email': 'example@email.com',
+                    'age': 22
+                    })
+
+&quot;&quot;&quot;
+db.remove(url)
+@param url: String
+&quot;&quot;&quot;
+# remove the data at the URL path 'users/to_be_deleted'
+db.remove('users/to_be_deleted')
+
+&quot;&quot;&quot;
+db.update(url, data)
+@param url: String
+@param data: Python data types and data structures
+&quot;&quot;&quot;
+# the data at the URL path 'users/star_count' is now the number 3.14
+db.update('users/pi', 3.14)
+
+</code></pre>
+
+<h3 id="retrieving-data">Retrieving Data</h3>
+<p>To retrieve data through Firebase you must use a callback function.
+Callback functions will all receive two parameters.
+A URL string which is being listened on and a data dictionary.</p>
+<pre><code class="python">
+def printAddedUser(url, data):
+    # URL path being listened on
+    print url
+    # relative location of the data from the passed URL path
+    print data['key']
+    # data located at the URL path and key
+    print data['value']
+
+</code></pre>
+
+<p>The data dictionary will have two attributes the 'key' for locating the
+data on the URL path and the 'value' of that data.</p>
+<pre><code class="python">ret = {
+    # relative location of the data from the passed URL path
+    &quot;key&quot;: &quot;-KOtqG2aj5ln1bJ2qkav&quot;,
+    &quot;value&quot;: {
+        &quot;username&quot;: &quot;Bob&quot;,
+        &quot;health&quot;: 85,
+        &quot;coordinates&quot;: [45, 110]
+    }
+}
+</code></pre>
+
+<h2 id="retrieving-data-examples">Retrieving Data Examples</h2>
+<h3 id="on-event-callbacks">On Event Callbacks</h3>
+<p>The following retrieval examples have the once parameter equal to <code>False</code>.
+As new events occur on the given URL path the callback function will run.</p>
+<h4 id="child-added">Child Added</h4>
+<p>Note: This is not a working example until you add your own API key, database URL and authentication URL.
+For help on setup head to <a href="../setup/">Firebase setup</a>.</p>
+<pre><code class="python">import firebase
+
+db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
+                           'fir-docs-demo', 'fir-docs-demo')
+
+# This callback function will print the username from the return data dictionary.
+def printAddedUser(url, data):
+    # When using db.push a unique key will be generated at the passed URL
+    # for the data.
+    key = data['key']
+    # This key will be used to update the data at that URL path and key.
+    # This change will emit a child_updated event see Child Updated.
+    updateUser(key)
+    print data['value']['username'], &quot; has joined.&quot;
+
+# the child_added method will retrieve every child at the URL path 'users/'
+db.child_added('users/', printAddedUser)
+
+new_user = {
+    'username': 'Bob',
+    'profession': 'builder'
+}
+
+modify_user = {
+    'username': 'Bob',
+    'profession': 'plumber'
+}
+
+# The value at the path 'users/' + key will be modify_user, not new_user.
+def updateUser(key):
+    db.update('users/' + key, modify_user)
+
+&quot;&quot;&quot;
+The push method will add a new user to the database.
+This will trigger a child_added event at 'users/' and fire the printAddedUser method.
+&quot;&quot;&quot;
+db.push('users/', new_user)
+
+</code></pre>
+
+<h4 id="child-removed">Child Removed</h4>
+<p>Note: This is not a working example until you add your own API key, database URL and authentication URL.
+For help on setup head to <a href="../setup/">Firebase setup</a>.</p>
+<pre><code class="python">import firebase
+
+db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
+                           'fir-docs-demo', 'fir-docs-demo')
+
+# This callback function will print the username from the return data dictionary.
+def printRemovedUser(url, data):
+    print data['value']['username'], &quot; has left.&quot;
+
+# The child_removed method will fire when a child at the URL path 'users/'
+# is removed.
+db.child_removed('users/', printRemovedUser)
+
+&quot;&quot;&quot;
+The remove method will remove the object at 'users/bob002' from the database.
+This will trigger a child_removed event at 'users/' and fire the printRemovedUser method.
+To see the effect you will need to have a value at the path 'users/bob002'.
+&quot;&quot;&quot;
+db.remove('users/bob002')
+
+</code></pre>
+
+<h4 id="child-updated">Child Updated</h4>
+<p>Note: This is not a working example until you add your own API key, database URL and authentication URL.
+For help on setup head to <a href="../setup/">Firebase setup</a>.</p>
+<pre><code class="python">import firebase
+
+db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
+                           'fir-docs-demo', 'fir-docs-demo')
+
+# This callback function will print the username from the return data dictionary.
+def printUpdatedUser(url, data):
+    print data['value']['username'], &quot; has updated.&quot;
+
+# The child_updated method will fire when a child at the URL path 'users/'
+# is updated.
+db.child_updated('users/', printUpdatedUser)
+
+updated_user = {
+    'username': 'Bob',
+    'profession': 'plumber'
+}
+
+&quot;&quot;&quot;
+The update method will update the object at 'users/bob002' from the database.
+This will trigger a child_updated event at 'users/' and fire the printUpdatedUser method.
+To see the effect you will need to have a value at the path 'users/bob002'.
+&quot;&quot;&quot;
+db.update('users/bob002', updated_user)
+
+</code></pre>
+
+<h4 id="value">Value</h4>
+<p>Note: This is not a working example until you add your own API key, database URL and authentication URL.
+For help on setup head to <a href="../setup/">Firebase setup</a>.</p>
+<pre><code class="python">import firebase
+
+db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
+                           'fir-docs-demo', 'fir-docs-demo')
+
+&quot;&quot;&quot;
+This callback function will be passed the all the contents on the path.
+To print the username from the return data dictionary we must iterate
+over the returned data[&quot;value&quot;].
+&quot;&quot;&quot;
+def printAllUsers(url, data):
+    # entire path's contents are sent
+    for user in data[&quot;value&quot;]:
+        print data[&quot;value&quot;][user][&quot;username&quot;] + &quot; has joined.&quot;
+
+# The printAllUsers method will fire when any change at the URL path 'users/'
+# is modified(added, removed, updated).
+db.value('users/', printAllUsers)
+
+new_user = {
+    'username': 'Bob',
+    'profession': 'builder'
+}
+
+updated_user = {
+    'username': 'Bob',
+    'profession': 'plumber'
+}
+
+&quot;&quot;&quot;
+The following methods will all trigger the firing of the value method and the
+return of the entire path's value.
+Note: That the values must exists at users/bob002 for update and remove methods to work.
+&quot;&quot;&quot;
+
+db.set('users/bob002', new_user)
+
+db.update('users/bob002', updated_user)
+
+db.remove('users/bob002')
+
+</code></pre>
+
+<h3 id="once-event-callbacks">Once Event Callbacks</h3>
+<p>The following retrieval examples have the once parameter equal to <code>True</code>.
+The callback function at the given URL path will run once.</p>
+<h4 id="child-added_1">Child Added</h4>
+<p>Note: This is not a working example until you add your own API key, database URL and authentication URL.
+For help on setup head to <a href="../setup/">Firebase setup</a>.</p>
+<pre><code class="python">import firebase
+
+db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
+                           'fir-docs-demo', 'fir-docs-demo')
+
+# This callback function will print the username from the return data dictionary.
+def printAddedUser(url, data):
+    print data['value']['username'], &quot; has joined.&quot;
+
+# The child_added method will retrieve one child at the URL path 'users/'.
+db.child_added('users/', printAddedUser, True)
+
+new_user = {
+    'username': 'Bob',
+    'profession': 'builder'
+}
+
+
+&quot;&quot;&quot;
+The push method will add a new user to the database, but this will not trigger
+the child_added event at 'users/' and fire the printAddedUser method!
+It has already retrieved a user and will not listen for this push method's child_added
+event.
+&quot;&quot;&quot;
+db.push('users/', new_user)
+
+</code></pre>
+
+<h4 id="child-removed_1">Child Removed</h4>
+<p>Note: This is not a working example until you add your own API key, database URL and authentication URL.
+For help on setup head to <a href="../setup/">Firebase setup</a>.</p>
+<pre><code class="python">import firebase
+
+db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
+                           'fir-docs-demo', 'fir-docs-demo')
+
+# This callback function will print the username from the return data dictionary.
+def printRemovedUser(url, data):
+    print data['value']['username'], &quot; has left.&quot;
+
+# The child_removed method will fire when a child at the URL path 'users/'
+# is removed and not fire again.
+db.child_removed('users/', printRemovedUser, True)
+
+&quot;&quot;&quot;
+The remove method will remove the object at 'users/bob002' from the database.
+This will trigger a child_removed event at 'users/' and fire the printRemovedUser method.
+To see the effect you will need to have a value at the path 'users/bob002'.
+&quot;&quot;&quot;
+db.remove('users/bob002')
+# this update will not trigger the child_removed function
+db.remove('users/mary004')
+
+</code></pre>
+
+<h4 id="child-updated_1">Child Updated</h4>
+<p>Note: This is not a working example until you add your own API key, database URL and authentication URL.
+For help on setup head to <a href="../setup/">Firebase setup</a>.</p>
+<pre><code class="python">import firebase
+
+db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
+                           'fir-docs-demo', 'fir-docs-demo')
+
+# This callback function will print the username from the return data dictionary.
+def printUpdatedUser(url, data):
+    print data['value']['username'], &quot; has updated.&quot;
+
+# The child_updated method will fire when a child at the URL path 'users/'
+# is updated and then will not fire again.
+db.child_updated('users/', printUpdatedUser, True)
+
+bob_updated_user = {
+    'username': 'Bob',
+    'profession': 'plumber'
+}
+
+mary_updated_user = {
+    'username': 'Mary',
+    'profession': 'doctor'
+}
+
+&quot;&quot;&quot;
+The update method will update the object at 'users/bob002' from the database.
+This will trigger a child_updated event at 'users/' and fire the printUpdatedUser method.
+To see the effect you will need to have a value at the path 'users/bob002'.
+&quot;&quot;&quot;
+db.update('users/bob002', bob_updated_user)
+# this update will not trigger the child_updated function
+db.update('users/mary004', mary_updated_user)
+
+</code></pre>
+
+<h4 id="value_1">Value</h4>
+<p>Note: This is not a working example until you add your own API key, database URL and authentication URL.
+For help on setup head to <a href="../setup/">Firebase setup</a>.</p>
+<pre><code class="python">import firebase
+
+db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
+                           'fir-docs-demo', 'fir-docs-demo')
+
+&quot;&quot;&quot;
+Try this callback function will be passed the all the contents on the path.
+To print the username from the return data dictionary we must iterate
+over the returned data[&quot;value&quot;].
+&quot;&quot;&quot;
+def printAllUsers(url, data):
+    # entire path's contents are sent
+    for user in data[&quot;value&quot;]:
+        print data[&quot;value&quot;][user][&quot;username&quot;] + &quot; has joined.&quot;
+
+# The printAllUsers method will fire only once at the URL path 'users/'.
+db.value('users/', printAllUsers, True)
+
+new_user = {
+    'username': 'Bob',
+    'profession': 'builder'
+}
+
+&quot;&quot;&quot;
+The push method will add a new user to the database, but this will not trigger
+the value event at 'users/' and fire the printAllUsers method!
+It has already retrieved the path contents and will not listen for this push method's
+value event.
+&quot;&quot;&quot;
+db.push('users/', new_user)
+
+</code></pre>
+
+<h2 id="common-use-cases">Common Use Cases</h2>
+<h3 id="set-and-retrieve">Set and Retrieve</h3>
+<p>Note: This is not a working example until you add your own API key, database URL and authentication URL.
+For help on setup head to <a href="../setup/">Firebase setup</a>.</p>
+<p>Run this example more than once to fully understand the code!</p>
+<pre><code class="python">
+from time import sleep
+from random import randint
+import firebase
+
+db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16l0w',
+                           'fir-docs-demo', 'fir-docs-demo')
+
+# initial lives count we want updated
+lives = 0
+
+&quot;&quot;&quot;
+Try this callback function will be passed the all the contents on the path.
+There will need to be a integer value at the URL path 'lives/' for this example to work.
+&quot;&quot;&quot;
+def getLives(url, data):
+    global lives
+    lives = data[&quot;value&quot;]
+
+&quot;&quot;&quot;
+With the once parameter set to `True` the getInitialLives method will
+fire only once at the URL path 'lives/'.
+We can use this .value() method with .set() method to get and set values.
+&quot;&quot;&quot;
+def retrieveFromDB():
+    db.value('lives/', getLives, True)
+
+&quot;&quot;&quot;
+The set method will set the new value for lives in the database, but this will not trigger the value event at 'lives/' again until we want to get the value again.
+&quot;&quot;&quot;
+def sendToDB(val):
+    db.set('lives/', val)
+
+# value of lives is 0
+print(&quot;Global lives value: &quot; + str(lives))
+# will assign the value of lives variable asynchronously
+retrieveFromDB()
+# wait for lives to be assigned
+sleep(5)
+# lives should be the value from database
+print(&quot;Original database value: &quot; + str(lives))
+# set value of lives to random integer on database
+random_int = randint(0,10)
+print(&quot;Random integer is: &quot; + str(random_int))
+sendToDB(random_int)
+# new value has only been sent to database not the global variable
+# value should be the same as random_int
+print(&quot;Still original database value: &quot; + str(lives))
+# will assign the value of lives variable asynchronously
+retrieveFromDB()
+# wait for lives to be assigned
+sleep(5)
+# lives should be updated and should print the random number
+print(&quot;Database value should return random_int value: &quot; + str(lives))
+
+</code></pre>
+
+<h3 id="unique-push-key-child-added-child-updated-child-removed">Unique Push Key Child Added, Child Updated, Child Removed</h3>
+<p>Note: This is not a working example until you add your own API key, database URL and authentication URL.
+For help on setup head to <a href="../setup/">Firebase setup</a>.
+For help on the Processing library head to <a href="/processing/setup">Processing setup</a>.</p>
+<pre><code class="python">
+from processing import *
+import firebase
+
+db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16l0w',
+                           'fir-docs-demo', 'fir-docs-demo')
+
+# Prints out the list of current objects at database URL 'users/'.
+# Continues to print every added object at database URL 'users/'.
+def handleAddedUser(url, data):
+    user_id = data[&quot;key&quot;]
+    username = data[&quot;value&quot;][&quot;username&quot;]
+    print &quot;child_added callback:&quot;
+    print &quot;key&quot;, user_id
+    print &quot;username&quot;, username
+
+# Prints out the updates object and key on the URL 'users/'.    
+def handleUpdatedUser(url, data):
+    user_id = data[&quot;key&quot;]
+    username = data[&quot;value&quot;][&quot;username&quot;]
+    print &quot;child_updated:&quot;
+    print &quot;key&quot;, user_id
+    print &quot;username&quot;, username
+
+# Prints out the removed object and key on the URL 'users/'.
+def handleRemovedUser(url, data):
+    user_id = data[&quot;key&quot;]
+    username = data[&quot;value&quot;][&quot;username&quot;]
+    print &quot;child_removed:&quot;
+    print &quot;key&quot;, user_id
+    print &quot;username&quot;, username
+
+# attach child_added listener on users/ path
+db.child_added('users/', handleAddedUser)
+# attach child_updated listener on users/ path
+db.child_updated('users/', handleUpdatedUser)
+# attach child_removed listener on users/ path
+db.child_removed('users/', handleRemovedUser)
+
+# setup processing
+def setup():
+    size(120, 30)
+    background(0, 0, 0)
+
+# draw run command button
+def draw():
+    background(0,0,0)
+    textSize(14)
+    text(&quot;Run Command&quot;, 10, 20)
+
+# On clicking run command button pass command as a string.
+# JavaScript dialog box will show.
+# Take the key from previous user objects to use update and remove.
+def mouseClicked():
+    cmd = raw_input(&quot;Enter Command([a]dd, [r]emove, [u]pdate):&quot;)
+    if cmd is &quot;a&quot;:
+        addUser()
+    elif cmd is &quot;r&quot;:
+        removeUser()
+    elif cmd is &quot;u&quot;:
+        updateUser()
+
+# Prompts for inputing new user's username into javascript dialog box.
+# Pushes new object to 'users/' URL path and will trigger child_added
+# event.
+def addUser():
+    username = raw_input(&quot;New username:&quot;)
+    db.push('users/',
+            {
+             'username': username
+             })
+
+# Prompts for inputing new user's key into javascript dialog box.
+# Removed object at 'users/' + key URL path and will trigger
+# child_removed event.
+def removeUser():
+    user_id = raw_input(&quot;Enter key for user to delete:&quot;)
+    db.remove('users/' + user_id)
+
+# Prompts for inputing new user's key and username into javascript
+# dialog box.
+# Updates object at 'users/' + key URL path and will trigger
+# child_updated event.
+def updateUser():
+    user_id = raw_input(&quot;Enter key for user to update:&quot;)
+    username = raw_input(&quot;New username:&quot;)
+    db.update('users/' + user_id,
+            {
+             'username': username
+             })
+
+# run processing
+run()
+
+</code></pre>
+
+<h2 id="chat-example">Chat Example</h2>
+<p>Note: This is not a working example until you add your own API key, database URL and authentication URL.
+For help on setup head to <a href="../setup/">Firebase setup</a>.
+For help on the Processing library head to <a href="/processing/setup">Processing setup</a>.</p>
+<pre><code class="python">
+# import firebase and processing library
+import firebase
+from processing import *
+
+# declare and initialize firebase db object
+db = firebase.loadFirebase('AIzaSyATrCtlpxYanFOSt_6xPmj2z2phAL16lAI',
+                           'fir-docs-demo', 'fir-docs-demo')
+# global name
+name = &quot;&quot;
+
+def printOnAdd(url, data):
+    &quot;&quot;&quot;
+    Callback function that prints the user's name followed by the message.
+    &quot;&quot;&quot;
+    print data[&quot;value&quot;][&quot;name&quot;], &quot;says:&quot;
+    print &quot;\t&quot;, data[&quot;value&quot;][&quot;text&quot;]
+
+# attach child_added listener on /messages path
+db.child_added('/messages', printOnAdd)
+
+# setup processing
+def setup():
+    size(120, 30)
+    background(0, 0, 0)
+
+# draw send message button
+def draw():
+    textSize(14)
+    text(&quot;Send Message&quot;, 10, 20)
+
+# on clicking message button enter message into
+# javascript dialog box
+def mouseClicked():
+    global name
+    msg = raw_input(&quot;Message:&quot;)
+    db.push('/messages',
+            {
+             'name': name,
+             'text': msg
+             })
+
+# prompts for inputing name into javascript dialog box
+def initializeChat():
+    global name
+    name = raw_input(&quot;Name:&quot;)
+
+# call initializeChat method and run processing
+initializeChat()
+run()
+
+
+</code></pre>
+
+<h3 id="credits">Credits</h3>
+<ul>
+<li><a href="https://firebase.google.com/docs/web/setup">Google Firebase</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../structured_data/" class="btn btn-neutral float-right" title="Structured Data">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../setup/" class="btn btn-neutral" title="Setup"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../setup/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../structured_data/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

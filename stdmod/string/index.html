@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>string - PythonMini Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/doc.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "string";
+    var mkdocs_page_input_path = "stdmod/string.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> PythonMini Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Core</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../core/number/">Number</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/boolean/">Boolean</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/comparison/">Comparison</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/none/">None</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/string/">String</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/function/">Function</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/list/">List & Tuple</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/set/">Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/dictionary/">Dictionary</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/stdoutin/">Standard output & input</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Standard Modules</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../collections/">collections</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../json/">json</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../math/">math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../operator/">operator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../random/">random</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../regexp/">re</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">string</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#string-common-string-operations">string - Common string operations</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#constants">Constants</a></li>
+        
+            <li><a class="toctree-l4" href="#functions">Functions</a></li>
+        
+            <li><a class="toctree-l4" href="#example">Example</a></li>
+        
+            <li><a class="toctree-l4" href="#reference">Reference</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../time/">time</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Turtle Graphic</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../turtle/turtle/">turtle</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Processing Graphic</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../processing/setup/">Setup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/color/">Color</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/shape/">Shape</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/typography/">Typography</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/web/">Web & Link</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/datetime/">Date & Time</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/image/">Image</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/transform/">Transform</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/light-camera/">Light & Camera</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/math/">Math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/constants/">Constants</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Audio</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../webaudio/webaudio/">webaudio</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Gesture</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../gesture/gesture/">gesture</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Impress</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../impress/impress/">impress</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Firebase</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../firebase/setup/">Setup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../firebase/firebase/">Firebase</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../firebase/structured_data/">Structured Data</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">PythonMini Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Standard Modules &raquo;</li>
+        
+      
+    
+    <li>string</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="string-common-string-operations">string - Common string operations</h2>
+<p>The string module contains a number of useful constants and functions.</p>
+<h3 id="constants">Constants</h3>
+<ul>
+<li><code>string.ascii_letters</code> : The concatenation of the ascii_lowercase and ascii_uppercase constants described below.</li>
+<li><code>string.ascii_lowercase</code> : The lowercase letters <em>abcdefghijklmnopqrstuvwxyz</em>. This value is not locale-dependent and will not change.</li>
+<li><code>string.ascii_uppercase</code> : The uppercase letters <em>ABCDEFGHIJKLMNOPQRSTUVWXYZ</em>. This value is not locale-dependent and will not change.</li>
+<li><code>string.digits</code> : The string <em>0123456789</em>.</li>
+<li><code>string.hexdigits</code> : The string <em>0123456789abcdefABCDEF</em>.</li>
+<li><code>string.letters</code> : The concatenation of the strings lowercase and uppercase described below.</li>
+<li><code>string.lowercase</code> : A string containing all the characters that are considered lowercase letters, <em>abcdefghijklmnopqrstuvwxyz</em>.</li>
+<li><code>string.octdigits</code> : The string <em>01234567</em>.</li>
+<li><code>string.punctuation</code> : String of ASCII characters which are considered punctuation characters.</li>
+<li><code>string.printable</code> : String of characters which are considered printable. This is a combination of digits, letters, punctuation, and whitespace.</li>
+<li><code>string.uppercase</code> : A string containing all the characters that are considered uppercase letters, <em>ABCDEFGHIJKLMNOPQRSTUVWXYZ</em>.</li>
+<li><code>string.whitespace</code> : A string containing all characters that are considered whitespace.</li>
+</ul>
+<h3 id="functions">Functions</h3>
+<ul>
+<li><code>string.capitalize(word)</code>: Return a copy of word with only its first character capitalized.</li>
+<li><code>string.capwords(s[, sep])</code>: Split the argument into words using str.split(), capitalize each word using str.capitalize(), and join the capitalized words using str.join().  </li>
+<li><code>string.join(words[, sep])</code>: Concatenate a list or tuple of words with intervening occurrences of sep.</li>
+<li><code>string.split(s[, sep[, maxsplit]])</code>: Return a list of the words of the string s. If the optional second argument sep is absent or None, the words are separated by arbitrary strings of whitespace characters (space, tab, newline, return, formfeed). If the second argument sep is present and not None, it specifies a string to be used as the word separator.</li>
+</ul>
+<h3 id="example">Example</h3>
+<pre><code class="python">import string
+
+
+print string.ascii_letters
+# abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+print string.ascii_lowercase
+# abcdefghijklmnopqrstuvwxyz
+print string.punctuation
+# !&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^_`{|}~
+
+s = &quot;hello world&quot;
+print string.capwords(s)
+# Hello World
+print string.capitalize(s)
+# Hello world
+
+words = [&quot;i&quot;, &quot;love&quot;, &quot;pizza&quot;]
+print string.join(words, &quot;*&quot;)
+# i*love*pizza
+</code></pre>
+
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://docs.python.org/2/library/string.html">string module, docs.python.org</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../time/" class="btn btn-neutral float-right" title="time">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../regexp/" class="btn btn-neutral" title="re"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../regexp/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../time/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

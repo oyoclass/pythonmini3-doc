@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Shape - PythonMini Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/doc.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Shape";
+    var mkdocs_page_input_path = "processing/shape.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> PythonMini Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Core</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../core/number/">Number</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/boolean/">Boolean</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/comparison/">Comparison</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/none/">None</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/string/">String</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/function/">Function</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/list/">List & Tuple</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/set/">Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/dictionary/">Dictionary</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/stdoutin/">Standard output & input</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Standard Modules</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../stdmod/collections/">collections</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/json/">json</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/math/">math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/operator/">operator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/random/">random</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/regexp/">re</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/string/">string</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/time/">time</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Turtle Graphic</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../turtle/turtle/">turtle</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Processing Graphic</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../setup/">Setup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../color/">Color</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">Shape</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#shape">Shape</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#2d-primitives">2D Primitives</a></li>
+        
+            <li><a class="toctree-l4" href="#curves">Curves</a></li>
+        
+            <li><a class="toctree-l4" href="#3d-primitives">3D Primitives</a></li>
+        
+            <li><a class="toctree-l4" href="#attributes">Attributes</a></li>
+        
+            <li><a class="toctree-l4" href="#vertex">Vertex</a></li>
+        
+            <li><a class="toctree-l4" href="#loading-displaying">Loading &amp; Displaying</a></li>
+        
+            <li><a class="toctree-l4" href="#example">Example</a></li>
+        
+            <li><a class="toctree-l4" href="#reference">Reference</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../typography/">Typography</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../web/">Web & Link</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../datetime/">Date & Time</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../image/">Image</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../transform/">Transform</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../light-camera/">Light & Camera</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../math/">Math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../constants/">Constants</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Audio</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../webaudio/webaudio/">webaudio</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Gesture</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../gesture/gesture/">gesture</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Impress</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../impress/impress/">impress</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Firebase</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../firebase/setup/">Setup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../firebase/firebase/">Firebase</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../firebase/structured_data/">Structured Data</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">PythonMini Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Processing Graphic &raquo;</li>
+        
+      
+    
+    <li>Shape</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="shape">Shape</h2>
+<h3 id="2d-primitives">2D Primitives</h3>
+<ul>
+<li><a href="http://processing.org/reference/arc_.html">arc()</a></li>
+<li><a href="http://processing.org/reference/ellipse_.html">ellipse()</a></li>
+<li><a href="http://processing.org/reference/line_.html">line()</a></li>
+<li><a href="http://processing.org/reference/point_.html">point()</a></li>
+<li><a href="http://processing.org/reference/quad_.html">quad()</a></li>
+<li><a href="http://processing.org/reference/rect_.html">rect()</a></li>
+<li><a href="http://processing.org/reference/triangle_.html">triangle()</a></li>
+</ul>
+<h3 id="curves">Curves</h3>
+<ul>
+<li><a href="http://processing.org/reference/bezier_.html">bezier()</a></li>
+<li><a href="http://processing.org/reference/bezierDetail_.html">bezierDetail()</a></li>
+<li><a href="http://processing.org/reference/bezierPoint_.html">bezierPoint()</a></li>
+<li><a href="http://processing.org/reference/bezierTangent_.html">bezierTangent()</a></li>
+<li><a href="http://processing.org/reference/curve_.html">curve()</a></li>
+<li><a href="http://processing.org/reference/curveDetail_.html">curveDetail()</a></li>
+<li><a href="http://processing.org/reference/curvePoint_.html">curvePoint()</a></li>
+<li><a href="http://processing.org/reference/curveTangent_.html">curveTangent()</a></li>
+<li><a href="http://processing.org/reference/curveTightness_.html">curveTightness()</a></li>
+</ul>
+<h3 id="3d-primitives">3D Primitives</h3>
+<ul>
+<li><a href="http://processing.org/reference/box_.html">box()</a></li>
+<li><a href="http://processing.org/reference/sphere_.html">sphere()</a></li>
+<li><a href="http://processing.org/reference/sphereDetail_.html">sphereDetail()</a></li>
+</ul>
+<h3 id="attributes">Attributes</h3>
+<ul>
+<li><a href="http://processing.org/reference/ellipseMode_.html">ellipseMode()</a></li>
+<li><a href="http://processing.org/reference/noSmooth_.html">noSmooth()</a></li>
+<li><a href="http://processing.org/reference/rectMode_.html">rectMode()</a></li>
+<li><a href="http://processing.org/reference/smooth_.html">smooth()</a></li>
+<li><a href="http://processing.org/reference/strokeCap_.html">strokeCap()</a></li>
+<li><a href="http://processing.org/reference/strokeJoin_.html">strokeJoin()</a></li>
+<li><a href="http://processing.org/reference/strokeWeight_.html">strokeWeight()</a></li>
+</ul>
+<h3 id="vertex">Vertex</h3>
+<ul>
+<li><a href="http://processing.org/reference/beginShape_.html">beginShape()</a></li>
+<li><a href="http://processing.org/reference/bezierVertex_.html">bezierVertex()</a></li>
+<li><a href="http://processing.org/reference/curveVertex_.html">curveVertex()</a></li>
+<li><a href="http://processing.org/reference/endShape_.html">endShape()</a></li>
+<li><a href="http://processing.org/reference/texture_.html">texture()</a></li>
+<li><a href="http://processing.org/reference/textureMode_.html">textureMode()</a></li>
+<li><a href="http://processing.org/reference/vertex_.html">vertex()</a></li>
+</ul>
+<h3 id="loading-displaying">Loading &amp; Displaying</h3>
+<ul>
+<li><a href="http://processing.org/reference/loadShape_.html">loadShape()</a></li>
+<li><a href="http://processing.org/reference/shape_.html">shape()</a></li>
+<li><a href="http://processing.org/reference/shapeMode_.html">shapeMode()</a></li>
+</ul>
+<h3 id="example">Example</h3>
+<pre><code class="python">from processing import *
+
+def setup():
+    size(400, 400)
+    background(0, 0, 0)
+
+def draw():
+    fill(0, 0, 255)
+    ellipse(56, 46, 55, 55)
+    fill(255, 0, 0)
+    triangle(130, 175, 158, 120, 186, 175)
+
+run()
+</code></pre>
+
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="http://processing.org/reference/">Processing.org</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../typography/" class="btn btn-neutral float-right" title="Typography">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../color/" class="btn btn-neutral" title="Color"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../color/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../typography/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

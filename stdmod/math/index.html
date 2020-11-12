@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>math - PythonMini Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/doc.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "math";
+    var mkdocs_page_input_path = "stdmod/math.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> PythonMini Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Core</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../core/number/">Number</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/boolean/">Boolean</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/comparison/">Comparison</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/none/">None</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/string/">String</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/function/">Function</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/list/">List & Tuple</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/set/">Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/dictionary/">Dictionary</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/stdoutin/">Standard output & input</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Standard Modules</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../collections/">collections</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../json/">json</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">math</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#math-mathematical-functions">math — Mathematical functions</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#constants">Constants</a></li>
+        
+            <li><a class="toctree-l4" href="#functions">Functions</a></li>
+        
+            <li><a class="toctree-l4" href="#example">Example</a></li>
+        
+            <li><a class="toctree-l4" href="#reference">Reference</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../operator/">operator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../random/">random</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../regexp/">re</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../string/">string</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../time/">time</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Turtle Graphic</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../turtle/turtle/">turtle</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Processing Graphic</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../processing/setup/">Setup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/color/">Color</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/shape/">Shape</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/typography/">Typography</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/web/">Web & Link</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/datetime/">Date & Time</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/image/">Image</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/transform/">Transform</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/light-camera/">Light & Camera</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/math/">Math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/constants/">Constants</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Audio</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../webaudio/webaudio/">webaudio</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Gesture</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../gesture/gesture/">gesture</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Impress</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../impress/impress/">impress</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Firebase</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../firebase/setup/">Setup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../firebase/firebase/">Firebase</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../firebase/structured_data/">Structured Data</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">PythonMini Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Standard Modules &raquo;</li>
+        
+      
+    
+    <li>math</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="math-mathematical-functions">math — Mathematical functions</h2>
+<!-- doc for this module is completed -->
+
+<p>This module contains some mathematical operations (subset of Python's standard <em>math</em> module), to use it, make sure use <code>import math</code> first to import it.</p>
+<h3 id="constants">Constants</h3>
+<ul>
+<li><code>math.e</code> : The mathematical constant e = 2.718281..., to available precision</li>
+<li><code>math.pi</code> : The mathematical constant π = 3.141592..., to available precision.</li>
+</ul>
+<h3 id="functions">Functions</h3>
+<ul>
+<li><code>math.acos(x)</code> : Return the arc cosine of x, in radians.</li>
+<li><code>math.acosh(x)</code> : Return the inverse hyperbolic cosine of x.</li>
+<li><code>math.asin(x)</code> : Return the arc sine of x, in radians.</li>
+<li><code>math.asinh(x)</code> : Return the inverse hyperbolic sine of x.</li>
+<li><code>math.atan(x)</code> : Return the arc tangent of x, in radians.</li>
+<li><code>math.atan2(y, x)</code> : Return atan(y / x), in radians. The result is between -pi and pi.</li>
+<li><code>math.atanh(x)</code> : Return the inverse hyperbolic tangent of x.</li>
+<li><code>math.ceil(x)</code> : Return the ceiling of x as a float, the smallest integer value greater than or equal to x.</li>
+<li><code>math.copysign(x, y)</code>: Return x with the sign of y. On a platform that supports signed zeros, copysign(1.0, -0.0) returns -1.0.</li>
+<li><code>math.cos(x)</code> : Return the cosine of x radians.</li>
+<li><code>math.cosh(x)</code> : Return the hyperbolic cosine of x.</li>
+<li><code>math.degrees(x)</code> : Convert angle x from radians to degrees.</li>
+<li><code>math.exp(x)</code> : Return e**x.</li>
+<li><code>math.fabs(x)</code> : Return the absolute value of x.</li>
+<li><code>math.factorial(x)</code> : Return x factorial.</li>
+<li><code>math.floor(x)</code> : Return the floor of x as a float, the largest integer value less than or equal to x.</li>
+<li><code>math.hypot(x, y)</code> : Return the Euclidean norm, sqrt(x<em>x + y</em>y). This is the length of the vector from the origin to point (x, y).</li>
+<li><code>math.log(x[,base])</code> : With one argument, return the natural logarithm of x (to base e). With two arguments, return the logarithm of x to the given base, calculated as log(x)/log(base).</li>
+<li><code>math.log10(x)</code> : Return the base-10 logarithm of x. This is usually more accurate than log(x, 10).</li>
+<li><code>math.pow(x, y)</code> : Return x raised to the power y.</li>
+<li><code>math.radians</code> : Convert angle x from degrees to radians.</li>
+<li><code>math.sin(x)</code> : Return the sine of x radians.</li>
+<li><code>math.sinh(x)</code> : Return the hyperbolic sine of x.</li>
+<li><code>math.sqrt(x)</code> : Return the square root of x.</li>
+<li><code>math.tan(x)</code> : Return the tangent of x radians.</li>
+<li><code>math.tanh(x)</code> : Return the hyperbolic tangent of x.</li>
+<li><code>math.trunc(x)</code> : Return the Real value x truncated to an Integral (usually a long integer).</li>
+</ul>
+<h3 id="example">Example</h3>
+<pre><code class="python">import math
+
+print math.pi
+# 3.14159265359
+
+print math.sqrt(4)
+# 2.0
+
+print math.sin(math.pi/6)
+# 0.5
+
+print math.degrees(math.pi/6)
+# 30.0
+</code></pre>
+
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://docs.python.org/2/library/math.html">Python Math Module, python.org</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../operator/" class="btn btn-neutral float-right" title="operator">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../json/" class="btn btn-neutral" title="json"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../json/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../operator/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

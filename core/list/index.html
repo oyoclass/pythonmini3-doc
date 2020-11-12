@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>List & Tuple - PythonMini Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/doc.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "List & Tuple";
+    var mkdocs_page_input_path = "core/list.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> PythonMini Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Core</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../number/">Number</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../boolean/">Boolean</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../comparison/">Comparison</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../none/">None</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../string/">String</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../function/">Function</a>
+                </li>
+                <li class=" current">
+                    
+    <a class="current" href="./">List & Tuple</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#list">List</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#functions">Functions</a></li>
+        
+            <li><a class="toctree-l4" href="#example">Example</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#tuple">Tuple</a></li>
+    
+
+    <li class="toctree-l3"><a href="#conversion-between-tuple-and-list">Conversion between tuple and list</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#reference">Reference</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../set/">Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../dictionary/">Dictionary</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../stdoutin/">Standard output & input</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Standard Modules</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../stdmod/collections/">collections</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/json/">json</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/math/">math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/operator/">operator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/random/">random</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/regexp/">re</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/string/">string</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/time/">time</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Turtle Graphic</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../turtle/turtle/">turtle</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Processing Graphic</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../processing/setup/">Setup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/color/">Color</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/shape/">Shape</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/typography/">Typography</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/web/">Web & Link</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/datetime/">Date & Time</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/image/">Image</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/transform/">Transform</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/light-camera/">Light & Camera</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/math/">Math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../processing/constants/">Constants</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Audio</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../webaudio/webaudio/">webaudio</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Gesture</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../gesture/gesture/">gesture</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Impress</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../impress/impress/">impress</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Firebase</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../firebase/setup/">Setup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../firebase/firebase/">Firebase</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../firebase/structured_data/">Structured Data</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">PythonMini Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Core &raquo;</li>
+        
+      
+    
+    <li>List & Tuple</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="list">List</h2>
+<p>List is used to group together values, can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.</p>
+<p>List's index starts from 0, and you can visit last element using index -1:</p>
+<pre><code class="python">a = [1, 5, 2, 3]
+print a[0]          # 1
+print a[1]          # 5
+print a[-1]         # 3
+print a[1:3]        # Get elements from index 1 to index 3 (exclusive), i.e. [5, 2]
+</code></pre>
+
+<p>Change element at a index:</p>
+<pre><code class="python">a = [1, 5, 2, 3]
+a[1] = 7
+print a             # [1, 7, 2, 3]
+</code></pre>
+
+<p>To check if one element in a list, you can use <code>in</code>:</p>
+<pre><code class="python">a = [1, 5, 2, 3]
+print 5 in a       # True
+</code></pre>
+
+<p>Use function <code>len</code> to get length (how many elements) of a list:</p>
+<pre><code class="python">a = [1, 5, 2, 3]
+print len(a)       # 4
+</code></pre>
+
+<h3 id="functions">Functions</h3>
+<ul>
+<li><code>list.append(x)</code></li>
+<li><code>list.count(x)</code></li>
+<li><code>list.extend(L)</code></li>
+<li><code>list.index(x)</code></li>
+<li><code>list.insert(i, x)</code></li>
+<li><code>list.pop([i])</code></li>
+<li><code>list.remove(x)</code></li>
+<li><code>list.reverse()</code></li>
+<li><code>list.sort(cmp=None, key=None, reverse=False)</code></li>
+</ul>
+<p>For how to use those functions, check <a href="https://docs.python.org/2/tutorial/datastructures.html#more-on-lists">lists method on Python official documentation</a>  </p>
+<h3 id="example">Example</h3>
+<pre><code class="python">a = [1, 5, 2, 3]
+a.append(6)
+print a             # [1, 5, 2, 3, 6]
+print a.count(5)    # 1
+a.remove(2)
+print a             # [1, 5, 3, 6]
+a.reverse()
+print a             # [6, 3, 5, 1]
+a.sort()
+print a             # [1, 3, 5, 6]
+</code></pre>
+
+<h2 id="tuple">Tuple</h2>
+<p>Tuple is similar with list, the main difference is list is mutable and tuple is immutable. Once you defined a tuple with parentheses <code>()</code>, you can not change its element.</p>
+<pre><code class="python">b = (1, 5, 2, 3)
+b.append(6)     # this will give an error, since b is a tuple and immutable
+</code></pre>
+
+<h2 id="conversion-between-tuple-and-list">Conversion between tuple and list</h2>
+<p>Though a tuple can not be changed, you can convert it to list, make some changes, then convert it back to tuple. You can do this with <code>tuple</code> and <code>list</code> function.</p>
+<pre><code class="python">b = (1, 5, 2, 3)
+b = list(b)         # Convert tuple to list
+b.append(6)         # Change list - append one more element
+b = tuple(b)        # Convert list to tuple
+print b             # (1, 5, 2, 3, 6)
+</code></pre>
+
+<h3 id="reference">Reference</h3>
+<ul>
+<li><a href="https://docs.python.org/2/tutorial/introduction.html#lists">Introduction of List - docs.python.org</a></li>
+<li><a href="https://docs.python.org/2/tutorial/datastructures.html#more-on-lists">More on Lists - docs.python.org</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../set/" class="btn btn-neutral float-right" title="Set">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../function/" class="btn btn-neutral" title="Function"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../function/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../set/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>

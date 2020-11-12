@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Setup - PythonMini Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <link href="../../css/doc.css" rel="stylesheet">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Setup";
+    var mkdocs_page_input_path = "processing/setup.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> PythonMini Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Core</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../core/number/">Number</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/boolean/">Boolean</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/comparison/">Comparison</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/none/">None</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/string/">String</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/function/">Function</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/list/">List & Tuple</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/set/">Set</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/dictionary/">Dictionary</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../core/stdoutin/">Standard output & input</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Standard Modules</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../stdmod/collections/">collections</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/json/">json</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/math/">math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/operator/">operator</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/random/">random</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/regexp/">re</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/string/">string</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../stdmod/time/">time</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Turtle Graphic</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../turtle/turtle/">turtle</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Processing Graphic</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">Setup</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#setup-processing">Setup processing</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#a-typical-running-structure">A typical running structure</a></li>
+        
+            <li><a class="toctree-l4" href="#get-input-from-user">Get input from user</a></li>
+        
+            <li><a class="toctree-l4" href="#3d-drawing">3D drawing</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../color/">Color</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../shape/">Shape</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../typography/">Typography</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../input/">Input</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../web/">Web & Link</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../datetime/">Date & Time</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../image/">Image</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../transform/">Transform</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../light-camera/">Light & Camera</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../math/">Math</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../constants/">Constants</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Audio</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../webaudio/webaudio/">webaudio</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Gesture</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../gesture/gesture/">gesture</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Impress</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../impress/impress/">impress</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Firebase</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../../firebase/setup/">Setup</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../firebase/firebase/">Firebase</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../../firebase/structured_data/">Structured Data</a>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">PythonMini Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Processing Graphic &raquo;</li>
+        
+      
+    
+    <li>Setup</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="setup-processing">Setup processing</h2>
+<h3 id="a-typical-running-structure">A typical running structure</h3>
+<p>Here is a typical way to use Processing library:</p>
+<pre><code class="python">from processing import *
+
+healthPoint = 3
+
+def setup():
+    size(500, 400)
+
+def draw():
+    background(0, 0, 0)
+    # do other drawings and logic
+
+    # here if you want to end the drawing, call exitp()
+    if healthPoint == 0:
+        exitp()
+
+
+run()
+</code></pre>
+
+<p>Notice the <code>run()</code> function at bottom, it will call <code>setup()</code> once, and will iteratively call <code>draw()</code> function again and again and again, until you call <code>exitp()</code> function.</p>
+<p>In <code>setup()</code> function, we setup the canvas size for drawing, which is 500px in width and 400px in height. In the <code>draw()</code> function, we make the canvas's background as black (RGB color (0, 0, 0) is black).</p>
+<h3 id="get-input-from-user">Get input from user</h3>
+<p>If you want to make a game with Processing, one important part will be detecting if player pressed keyboard or clicked mouse, which is:</p>
+<pre><code class="python">
+from processing import *
+
+healthPoint = 3
+
+def setup():
+    size(500, 400)
+
+def draw():
+    background(0, 0, 0)
+    # do other drawings and logic
+    # here if you want to end the drawing, call exitp()
+    if healthPoint == 0:
+        exitp()
+
+def keyPressed():
+    if keyboard.keyCode == 37:
+        # left arrow key pressed
+        # do something ...
+    elif keyboard.keyCode == 39:
+        # right arrow key
+        # do something ...
+
+def mousePressed():
+    print &quot;Mouse pressed at&quot;, mouse.x, mouse.y
+
+
+run()
+</code></pre>
+
+<h3 id="3d-drawing">3D drawing</h3>
+<p>Processing also support 3D drawing, to use 3D, you need to setup canvas to "3D" model by passing P3D as the 3rd parameter in <code>size</code> function:</p>
+<pre><code class="python">from processing import *
+
+rotating = 0.01
+
+def setup():
+    size(400, 400, P3D)
+
+def draw():
+    global rotating
+    background(0, 0, 0)
+    translate(200, 100, 0)
+    rotateY(rotating)
+    rotating += 0.01
+    if rotating &gt;= PI:
+        rotating = 0.01
+    fill(255, 0, 0)
+    box(40)
+
+run()
+</code></pre>
+
+<p>To check more functions about Processing library, check all functions under <code>Processing Graphic</code> on the left.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../color/" class="btn btn-neutral float-right" title="Color">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../turtle/turtle/" class="btn btn-neutral" title="turtle"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../turtle/turtle/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../color/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+
+</body>
+</html>
