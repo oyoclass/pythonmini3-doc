@@ -27,7 +27,7 @@ And an Audio object has following method:
 import webaudio
 import time
 
-print "Builtin Audios:", webaudio.builtinAudios()
+print("Builtin Audios:", webaudio.builtinAudios())
 
 spring_weather = "http://www.soundjay.com/ambient/spring-weather-1.mp3"
 # load spring_weather, autoplay it
@@ -60,7 +60,7 @@ webaudio.unloadAllAudio()
 ### Royalty-free sound website reference
 
 * [soundjay.com](http://www.soundjay.com) - Free Sound Effects.
-* [www.bfxr.net](http://www.bfxr.net) - Make sound effect for your game. 
+* [www.bfxr.net](http://www.bfxr.net) - Make sound effect for your game.
 
 ### Credits
 

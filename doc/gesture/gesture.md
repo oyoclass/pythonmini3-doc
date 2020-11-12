@@ -14,19 +14,19 @@ __gesture__ library will detect your gesture by using webcam, you can call a fun
 import gesture
 
 def on_left():
-    print "moving left"
+    print("moving left")
 
 def on_right():
-    print "moving right"
+    print("moving right")
 
 def gestureOnUp():
     # this is the default callback function when `up` is detected
     # you can use gesture.on('up', other_func) to set this callback
     # function to be other_func
-    print "moving up"
+    print("moving up")
 
 def gestureOnDown():
-    print "moving down"
+    print("moving down")
 
 
 # set callback function for left and right gesture

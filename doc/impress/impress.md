@@ -44,9 +44,9 @@ Impress can be used to create slideshows that are more than just a simple left t
 import impress
 import time
 
-print impress.builtinFonts()
+print(impress.builtinFonts())
 # ['Slabo', 'Roboto Condensed', 'Titillium Web', 'PT Sans', 'Rakkas', 'Baloo Da', 'Lobster', 'Lalezar', 'Poiret One', 'Bungee', 'Bungee Shade', 'Shrikhand', 'Yatra One', 'Mogra', 'Black Ops One', 'Concert One', 'Kavoon', 'Ewert', 'Fruktur', 'Baloo', 'Monoton', 'Creepster', 'Righteous', 'Bangers', 'Fredoka One', 'Special Elite', 'Bubblegum Sans', 'Limelight', 'Freckle Face', 'Cabin Sketch', 'Frijole', 'Finger Paint', 'Fontdiner Swanky', 'Fredericka the Great', 'Baumans', 'Slackey']
-print impress.builtinThemes()
+print(impress.builtinThemes())
 # ['blue', 'red', 'green', 'dark']
 
 list1 = ["Jake", "Andrew", "Jeden", "Gideon", "Jacica"]
