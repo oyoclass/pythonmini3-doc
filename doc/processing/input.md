@@ -99,9 +99,9 @@ def draw():
     background(0)
 
 def mousePressed():
-    print "pressed at:", mouse.x, mouse.y
+    print("pressed at:", mouse.x, mouse.y)
     # left button is 37, right button is 39
-    print "mouse button:", mouse.button
+    print("mouse button:", mouse.button)
 
 def mouseMoved():
     info = "Mouse moved at (%s, %s)" % (mouse.x, mouse.y)
