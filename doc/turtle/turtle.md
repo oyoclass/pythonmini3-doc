@@ -1,6 +1,6 @@
 ## turtle — Turtle graphics
 
-Turtle graphic implements a subset functions of the [Python Turtle Module](https://docs.python.org/2/library/turtle.html).
+Turtle graphic implements a subset functions of the [Python Turtle Module](https://docs.python.org/3/library/turtle.html).
 
 ### Setup
 
@@ -20,7 +20,7 @@ Now you have your own turtle (in this example I called it *nick*, but you can ch
 * ```turtle.right(angle)``` or ```turtle.rt(angle)``` : Turn turtle right by *angle* units.
 * ```turtle.left(angle)``` or ```turtle.lt(angle)``` : Turn turtle left by *angle* units.
 * ```turtle.goto(x, y)``` : Move turtle to an absolute position. If the pen is down, draw line.
-* ```turtle.setposition(x, y)``` or ```turtle.setpos(x, y)``` : Move turtle to an absolute position without drawing the line. (*Notice:* this one is different with Python's official turtle module documentation, in which *setposition* is the same as *goto*).
+* ```turtle.setposition(x, y)``` or ```turtle.setpos(x, y)``` : Move turtle to an absolute position. If the pen is down, draw line. If you want to move the turtle to a position without draw the trailing line, make sure call the `turtle.penup()` function first.
 * ```turtle.setworldcoordinates(llx, lly, urx, ury)``` : Set up user-defined coordinate system and switch to mode “world” if necessary.
 * ```turtle.setx(x)``` : Set the turtle’s first coordinate to x, leave second coordinate unchanged.
 * ```turtle.sety(y)``` : Set the turtle’s second coordinate to y, leave first coordinate unchanged.
@@ -142,4 +142,4 @@ nick.end_fill()
 
 ### Reference
 
-* [turtle library - docs.python.org](https://docs.python.org/2/library/turtle.html)
+* [turtle library - docs.python.org](https://docs.python.org/3/library/turtle.html)
