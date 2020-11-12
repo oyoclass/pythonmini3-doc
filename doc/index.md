@@ -7,7 +7,7 @@ Quote from [Python official website](https://www.python.org/):
 
 ## About PythonMini
 
-PythonMini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 2, plus extra libraries:
+PythonMini is an online python interpreter to help you write python in browser, without installing it to your computer. It implements a subset of Python 3, plus extra libraries:
 
 * [processing](/processing/setup) : Graphical library
 * [webaudio](/webaudio/webaudio) : Audio library
@@ -23,21 +23,21 @@ Copy following example code to PythonMini editor then click "Run":
 * Say hello
 
 ```python
-print "hello"
+print("hello")
 ```
 
 * Doing math
 
 ```python
-print 123 * 456     # calculate 123 times 456
-print 180 / 12      # calculate 180 divided by 12
+print(123 * 456)     # calculate 123 times 456
+print(180 / 12)      # calculate 180 divided by 12
 ```
 
 * Ask a question
 
 ```python
-answer = raw_input("What's your name?")
-print "hello", answer
+answer = input("What's your name?")
+print("hello", answer)
 ```
 
 * Draw a circle
@@ -99,7 +99,7 @@ To access the full capabilities of Python, download and install python onto your
 
  * [Python.org](https://www.python.org)
  * [Download Python](https://www.python.org/downloads/)
- * [Python Official Documentation](https://www.python.org/doc/)
+ * [Python Official Documentation](https://docs.python.org/3/)
 
 
 ## Feedback
@@ -110,8 +110,8 @@ If you find any error about this PythonMini documentation, please help us improv
 ## Credits
 
 * [Skulpt](http://skulpt.org/)
-* [Python Official Documentation](https://docs.python.org/2/)
-* [Processingjs](http://processingjs.org/reference/) & [Processing.py](http://py.processing.org/reference/)
+* [Python Official Documentation](https://docs.python.org/3/)
+* [Processing.py](http://py.processing.org/reference/)
 * [Gesture.js](https://github.com/bofeng/gest.js)
 * [Impress.js](https://github.com/impress/impress.js/)
 * [Firebase](https://firebase.google.com)
