@@ -1,0 +1,52 @@
+site_name: PythonMini Documentation
+theme: readthedocs
+docs_dir: 'doc'
+nav:
+    - 'Home': 'index.md'
+    - 'Core':
+        - 'Number': 'core/number.md'
+        - 'Boolean': 'core/boolean.md'
+        - 'Comparison': 'core/comparison.md'
+        - 'None': 'core/none.md'
+        - 'String': 'core/string.md'
+        - 'Function': 'core/function.md'
+        - 'List & Tuple': 'core/list.md'
+        - 'Set': 'core/set.md'
+        - 'Dictionary': 'core/dictionary.md'
+        - 'Standard output & input': 'core/stdoutin.md'
+    - 'Standard Modules':
+        - 'collections': 'stdmod/collections.md'
+        - 'json': 'stdmod/json.md'
+        - 'math': 'stdmod/math.md'
+        - 'operator': 'stdmod/operator.md'
+        - 'random': 'stdmod/random.md'
+        - 're': 'stdmod/regexp.md'
+        - 'string': 'stdmod/string.md'
+        - 'time': 'stdmod/time.md'
+    - 'Turtle Graphic':
+        - 'turtle': 'turtle/turtle.md'
+    - 'Processing Graphic':
+        - 'Setup': 'processing/setup.md'
+        - 'Color': 'processing/color.md'
+        - 'Shape': 'processing/shape.md'
+        - 'Typography': 'processing/typography.md'
+        - 'Input': 'processing/input.md'
+        - 'Web & Link': 'processing/web.md'
+        - 'Date & Time': 'processing/datetime.md'
+        - 'Image': 'processing/image.md'
+        - 'Transform': 'processing/transform.md'
+        - 'Light & Camera': 'processing/light-camera.md'
+        - 'Math': 'processing/math.md'
+        - 'Constants': 'processing/constants.md'
+    - 'Audio':
+        - 'webaudio': 'webaudio/webaudio.md'
+    - 'Gesture':
+        - 'gesture': 'gesture/gesture.md'
+    - 'Impress':
+        - 'impress': 'impress/impress.md'
+    - 'Firebase':
+        - 'Setup': 'firebase/setup.md'
+        - 'Firebase': 'firebase/firebase.md'
+        - 'Structured Data': 'firebase/structured_data.md'
+extra_css:
+    - css/doc.css
