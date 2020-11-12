@@ -31,25 +31,25 @@ The string module contains a number of useful constants and functions.
 import string
 
 
-print string.ascii_letters
+print(string.ascii_letters)
 # abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
-print string.ascii_lowercase
+print(string.ascii_lowercase)
 # abcdefghijklmnopqrstuvwxyz
-print string.punctuation
+print(string.punctuation)
 # !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
 
 s = "hello world"
-print string.capwords(s)
+print(string.capwords(s))
 # Hello World
-print string.capitalize(s)
+print(string.capitalize(s))
 # Hello world
 
 words = ["i", "love", "pizza"]
-print string.join(words, "*")
+print(string.join(words, "*"))
 # i*love*pizza
 ```
 
 
 ### Reference
 
-* [string module, docs.python.org](https://docs.python.org/2/library/string.html)
+* [string module, docs.python.org](https://docs.python.org/3/library/string.html)

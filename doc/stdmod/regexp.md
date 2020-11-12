@@ -18,7 +18,7 @@ This module provides regular expression matching operations.
 
 * `re.MatchObject` : match object support methods `group` and `groups`
 
-For more information on how to use above attributes and methods, check Python's official documentation at [re module - docs.python.org](https://docs.python.org/2/library/re.html)
+For more information on how to use above attributes and methods, check Python's official documentation at [re module - docs.python.org](https://docs.python.org/3/library/re.html)
 
 ### Example
 
@@ -27,16 +27,16 @@ import re
 
 m = re.match(r"(\w+) (\w+)", "Isaac Newton, physicist")
 
-print m.group(0)
+print(m.group(0))
 # Isaac Newton
 
-print m.group(1)
+print(m.group(1))
 # Isaac
 
-print m.group(2)
+print(m.group(2))
 # Newton
 ```
 
 ### Reference
 
-* [re module - docs.python.org](https://docs.python.org/2/library/re.html)
+* [re module - docs.python.org](https://docs.python.org/3/library/re.html)

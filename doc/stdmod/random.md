@@ -24,19 +24,19 @@ import random
 
 lst = [1, 2, 3, 4, 5]
 
-print random.choice(lst)
+print(random.choice(lst))
 
-print random.randint(1, 10)
+print(random.randint(1, 10))
 
-print random.random()
+print(random.random())
 
 random.shuffle(lst)
-print lst
+print(lst)
 
-print random.sample(range(100), 10)
+print(random.sample(range(100), 10))
 ```
 
 
 ### Reference
 
-* [random module - docs.python.org](https://docs.python.org/2/library/random.html)
+* [random module - docs.python.org](https://docs.python.org/3/library/random.html)

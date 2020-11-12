@@ -42,29 +42,29 @@ The operator module exports a set of efficient functions corresponding to the in
 * `operator.truth`
 * `operator.xor`
 
-For more information on how to use those functions, please check Python's official documentation at [operator module - docs.python.org](https://docs.python.org/2/library/operator.html).
+For more information on how to use those functions, please check Python's official documentation at [operator module - docs.python.org](https://docs.python.org/3/library/operator.html).
 
 ### Example
 
 ```python
 import operator
 
-print operator.lt(1, 2)
+print(operator.lt(1, 2))
 # True
 
-print operator.truth(0)
+print(operator.truth(0))
 # False
 
-print operator.truth([])
+print(operator.truth([]))
 # False
 
-print operator.truth(2)
+print(operator.truth(2))
 # True
 
-print operator.countOf("hello world", "l")
+print(operator.countOf("hello world", "l"))
 # 3
 ```
 
 ### Reference
 
-* [operator module - docs.python.org](https://docs.python.org/2/library/operator.html)
+* [operator module - docs.python.org](https://docs.python.org/3/library/operator.html)

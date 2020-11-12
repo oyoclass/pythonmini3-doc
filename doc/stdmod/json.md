@@ -19,9 +19,9 @@ student = {
 
 # s is a string
 s = json.dumps(student)
-print s
+print(s)
 
 # o is an object
 o = json.loads(s)
-print o["name"]
+print(o["name"])
 ```

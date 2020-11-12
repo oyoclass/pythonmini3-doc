@@ -44,19 +44,19 @@ This module contains some mathematical operations (subset of Python's standard *
 ```python
 import math
 
-print math.pi
+print(math.pi)
 # 3.14159265359
 
-print math.sqrt(4)
+print(math.sqrt(4))
 # 2.0
 
-print math.sin(math.pi/6)
+print(math.sin(math.pi/6))
 # 0.5
 
-print math.degrees(math.pi/6)
+print(math.degrees(math.pi/6))
 # 30.0
 ```
 
 ### Reference
 
-* [Python Math Module, python.org](https://docs.python.org/2/library/math.html)
+* [Python Math Module, python.org](https://docs.python.org/3/library/math.html)

@@ -25,26 +25,26 @@ This module provides time-related functions.
 
 * `time.struct_time`: The type of the time value sequence returned by gmtime(), localtime().
 
-For more information, check [time module on Python official documentation](https://docs.python.org/2/library/time.html).
+For more information, check [time module on Python official documentation](https://docs.python.org/3/library/time.html).
 ### Example
 
 ```python
 import time
 
-print time.timezone
-print time.altzone
-print time.ctime()
-print time.clock()
-print time.localtime()
-print time.gmtime()
-print time.tzname
+print(time.timezone)
+print(time.altzone)
+print(time.ctime())
+print(time.clock())
+print(time.localtime())
+print(time.gmtime())
+print(time.tzname)
 
 # print out time every 1 second
 for i in range(10):
-    print time.asctime()
+    print(time.asctime())
     time.sleep(1)
 ```
 
 ### Reference
 
-* [time module - docs.python.org](https://docs.python.org/2/library/time.html)
+* [time module - docs.python.org](https://docs.python.org/3/library/time.html)
