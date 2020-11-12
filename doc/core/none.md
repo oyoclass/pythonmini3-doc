@@ -6,10 +6,10 @@ None is frequently used to represent the absence of a value, as when default arg
 
 ```python
 a = None
-print a             # None
-print a is None     # True
+print(a)             # None
+print(a is None)     # True
 ```
 
 ### Reference
 
-* [None - docs.python.org](https://docs.python.org/2/library/constants.html#None)
+* [None - docs.python.org](https://docs.python.org/3/library/constants.html#None)

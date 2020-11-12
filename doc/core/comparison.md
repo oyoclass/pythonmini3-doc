@@ -16,15 +16,15 @@ Comparison operations are supported by all objects. They all have the same prior
 ### Example
 
 ```python
-print 2 != 3            # True
-print 5 >= 4            # True
-print 2 is 2            # True
-print 300 is 300        # True
+print(2 != 3)            # True
+print(5 >= 4)            # True
+print(2 is 2)            # True
+print(300 is 300)        # True
 
 num = 350
-print num is not 350    # False
+print(num is not 350)    # False
 ```
 
 ### Reference
 
-* [Comparisons - docs.python.org](https://docs.python.org/2/library/stdtypes.html#comparisons)
+* [Comparisons - docs.python.org](https://docs.python.org/3/library/stdtypes.html#comparisons)

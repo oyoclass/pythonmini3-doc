@@ -7,7 +7,7 @@ You can use `set()` to get a set, here is a quick example:
 ```python
 basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
 fruit = set(basket)
-print fruit     # set(['apple', 'orange', 'pear', 'banana'])
+print(fruit)     # set(['apple', 'orange', 'pear', 'banana'])
 ```
 
 ### Functions
@@ -39,20 +39,20 @@ a.add(1)
 a.add(2)
 a.add(1)
 
-print a                 # set([1, 2])
-print len(a)            # 2
+print(a)                 # set([1, 2])
+print(len(a))            # 2
 
 b = set([2,2,3])
-print b                 # set([2, 3])
+print(b)                 # set([2, 3])
 
-print a.intersection(b) # set([2])
-print a.union(b)        # set([1, 2, 3])
+print(a.intersection(b)) # set([2])
+print(a.union(b))        # set([1, 2, 3])
 
 c = set([3])
-print b.issuperset(c)   # True
+print(b.issuperset(c))   # True
 ```
 
 ### Reference
 
-* [Sets - docs.python.org](https://docs.python.org/2/tutorial/datastructures.html#sets)
-* [Set - docs.python.org](https://docs.python.org/2/library/stdtypes.html#set)
+* [Sets - docs.python.org](https://docs.python.org/3/tutorial/datastructures.html#sets)
+* [Set - docs.python.org](https://docs.python.org/3/library/stdtypes.html#set)

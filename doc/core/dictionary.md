@@ -20,16 +20,16 @@ It is best to think of a dictionary as an unordered set of key: value pairs, wit
 
 ```python
 a = {"name": "Bo", "age": 20}
-print a.has_key("name")             # True
-print a.keys()                      # ['name', 'age']
-print a.values()                    # ['Bo', 20]
+print(a.has_key("name"))             # True
+print(a.keys())                      # ['name', 'age']
+print(a.values())                    # ['Bo', 20]
 a.setdefault("gender", "m")         
-print a                             # {'name': 'Bo', 'age': 20, 'gender': 'm'}
+print(a)                             # {'name': 'Bo', 'age': 20, 'gender': 'm'}
 a.update({"city": "Stony Brook"})   
-print a                 # {'name': 'Bo', 'age': 20, 'gender': 'm', 'city': 'Stony Brook'}
+print(a)                 # {'name': 'Bo', 'age': 20, 'gender': 'm', 'city': 'Stony Brook'}
 ```
 
 ### Reference
 
-* [Data structure: dictionary - docs.python.org](https://docs.python.org/2/tutorial/datastructures.html#dictionaries)
-* [Mapping Type - Dict](https://docs.python.org/2/library/stdtypes.html#mapping-types-dict)
+* [Data structure: dictionary - docs.python.org](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
+* [Mapping Type - Dict](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)

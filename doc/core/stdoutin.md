@@ -5,10 +5,10 @@
 The most common way to output something is using `print` function:
 
 ```python
-print 2 * 3
-print "hello"
+print(2 * 3)
+print("hello")
 arr = [1, 2, 3, 4]
-print arr
+print(arr)
 ```
 
 Output:
@@ -36,23 +36,24 @@ hello 1,2,3,4
 
 ### Standard input
 
-To get user input, you can use `raw_input` function:
+To get user input, you can use `input` function:
 
 ```python
-name = raw_input("What's your name?")
-print "hello", name
+name = input("What's your name?")
+print("hello", name)
 ```
 
-What you get from `raw_input` will always be string, even it looks like a number, for example:
+What you get from `input` will always be string, even it looks like a number, for example:
 
 ```python
-num = raw_input("Give me a number")
-print num               # 12
-print num * 2           # 1212
+num = input("Give me a number")
+print(num)              # 12, this is a string
+print(num * 2)          # 1212, this is the string repeated 2 times
 
 # now convert it to number
 num = int(num)
-print num * 2           # 24
+print(num)              # 12, now this is a number
+print(num * 2)          # 24, this is 12 * 2
 ```
 
 You can also read user's input by using `sys.stdin.read` or `sys.stdin.readline`:
@@ -61,9 +62,9 @@ You can also read user's input by using `sys.stdin.read` or `sys.stdin.readline`
 from sys import stdin
 
 name = stdin.readline()
-print name
+print(name)
 
 # Only read 3 characters
 name = stdin.readline(3)
-print name
+print(name)
 ```

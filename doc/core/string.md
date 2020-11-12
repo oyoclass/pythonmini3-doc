@@ -40,22 +40,22 @@ You can define a string using two single-quote or two double-quote, or two tripl
 * `str.upper()`
 * `str.zfill(width)`
 
-For how to use above functions, check [String Methods on Python official documentation](https://docs.python.org/2/library/stdtypes.html#string-methods).
+For how to use above functions, check [String Methods on Python official documentation](https://docs.python.org/3/library/stdtypes.html#string-methods).
 
 ### Example
 
 ```python
 a = "hello world"
-print a.capitalize()        # Hello world
-print a.upper()             # HELLO WORLD
-print a.find("world")       # 6
-print a.split()             # ['hello', 'world']
-print a.isalnum()           # False
+print(a.capitalize())        # Hello world
+print(a.upper())             # HELLO WORLD
+print(a.find("world"))       # 6
+print(a.split())             # ['hello', 'world']
+print(a.isalnum())           # False
 
 b = "hello {0} {1}"
-print b.format("Albert", "Einstein")    # hello Albert Einstein
+print(b.format("Albert", "Einstein"))    # hello Albert Einstein
 ```
 
 ### Reference
 
-* [String methods - docs.python.org](https://docs.python.org/2/library/stdtypes.html#string-methods)
+* [String methods - docs.python.org](https://docs.python.org/3/library/stdtypes.html#string-methods)
