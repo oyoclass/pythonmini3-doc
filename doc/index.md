@@ -91,6 +91,60 @@ run()
 
 There are a lot more you can do with PythonMini, for more information and examples, check the documentation on the left.
 
+## From Python2 to Python3
+
+If you learnt Python with the version 2 (Python 2), there are several changes you need to make when you code in Python3. Here we just list some common ones:
+
+1, `print` now is a function, you need to put parenthesis around the content you want to print out:
+In Python2:
+```
+print 1+2
+print "hello"
+```
+In Python3:
+```
+print(1+2)
+print("hello")
+```
+
+2, Division. In Python2 if you divide an integer with another integer with the the division operator `/`, if will always return an integer:
+```
+print 10 / 5    # this will print 2
+print 12 / 5    # this will also print 2
+```
+In Python3, it will print out decimal. If you want to get the integer, use `//`:
+```
+print(10 / 5)   # this will print 2.0
+print(12 / 5)   # this will print 2.4
+print(12 // 5)  # this will print 2
+```
+
+3, `raw_input` function is removed in Python3. If you use it in Python2, change to `input` function.
+In Python2:
+```
+name = raw_input("What's your name?")
+```
+In Python3:
+```
+name = input("What's your name?")
+```
+
+4, `round` function. In Python2, if the decimal part of a number is 0.5, it will round up, this has been changed in Python3. In Python3 it will be rounded to the closest even number, which means 2.5 will be rounded to 2, and 3.5 will be rounded to 4.
+In Python2:
+```
+print round(2.1)   # 2.0
+print round(2.5)   # 3.0
+print round(2.6)   # 3.0
+print round(3.5)   # 4.0
+```
+In Python3:
+```
+print(round(2.1))   # 2
+print(round(2.5))   # 2, notice it is rounded to closest even number, 2
+print(round(2.6))   # 3
+print(round(3.5))   # 4
+```
+
 ## Beyond PythonMini
 
 PythonMini is meant as an introduction to the Python programming language. Everything you see in this documentation represents the full capability of the PythonMini editor. It is designed to allow you to run python in the browser, making storage and sharing of your work easier. Much more is possible with python than can be done with Python Mini alone. Examples include accessing local data, interacting with the operating system, or installing and using third-party libraries.
